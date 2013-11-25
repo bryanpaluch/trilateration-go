@@ -12,6 +12,6 @@ func main() {
   fmt.Println("Cordinates of a:", a)
   fmt.Println("Cordinates of b:", b)
   fmt.Println("Cordinates of c:", c)
-  x, y := a.trilaterate(b, c)
+  x, y := a.Trilaterate(b, c)
   fmt.Println("Cordinates of intersections center x:", x, "y:", y)
 }

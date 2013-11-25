@@ -8,12 +8,12 @@ type Cordinate struct {
   x, y, d float64
 }
 
-func (c1 Cordinate) trilaterate(c2, c3 Cordinate) (x, y float64) {
+func (c1 Cordinate) Trilaterate(c2, c3 Cordinate) (x, y float64) {
 
-  return trilaterate(c1, c2, c3)
+  return Trilaterate(c1, c2, c3)
 }
 
-func trilaterate(c1, c2, c3 Cordinate) (x, y float64) {
+func Trilaterate(c1, c2, c3 Cordinate) (x, y float64) {
   // https://confluence.slac.stanford.edu/display/IEPM/TULIP+Algorithm+Alternative+Trilateration+Method
   // Possiblility to divide by zero. Rearranging c1,c2,c3 may result in correct answer when that happens
 
