@@ -19,7 +19,10 @@ func un(s string, startTime time.Time) {
 }
 
 type Cordinate struct {
-  x, y, d float64
+  x    float64
+  y    float64
+  d    float64
+  uuid string
 }
 
 func (c1 Cordinate) Trilaterate(c2, c3 Cordinate) (x, y float64) {
